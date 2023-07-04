@@ -1,0 +1,19 @@
+If opening the Windows Store instead of running Python when you type "python" in the command prompt (CMD), it means that the system's PATH environment variable is not set up correctly. The PATH variable tells the operating system where to find executable files, such as the Python interpreter.
+
+To fix this issue, you'll need to ensure that the Python installation directory is added to the PATH variable. Here's how you can do it:
+
+1. Find the Python installation directory. It is typically installed in `C:\PythonXX`, where `XX` represents the version number (e.g., Python37, Python38, etc.). If you installed Python in a different directory, make a note of that directory.
+
+2. Open the Start menu and search for "Environment Variables" and select "Edit the system environment variables".
+
+3. In the "System Properties" window that opens, click on the "Environment Variables" button.
+
+4. In the "Environment Variables" window, find the "Path" variable under "System variables" and select it, then click on the "Edit" button.
+
+5. In the "Edit Environment Variable" window, click on the "New" button and add the path to your Python installation directory. For example, if your Python installation directory is `C:\Python37`, add `C:\Python37` to the list of paths. Click "OK" to save the changes.
+
+6. Close the "Environment Variables" windows and the "System Properties" window.
+
+7. Open a new command prompt window and type `python`. It should now run the Python interpreter instead of opening the Windows Store.
+
+By adding the Python installation directory to the PATH variable, you're telling the system where to find the Python executable, and you should be able to run Python commands from the command prompt without any issues.
